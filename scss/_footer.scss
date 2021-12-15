@@ -1,0 +1,27 @@
+@import "variables";
+
+.footer__pie--modificador {
+    height: 16rem;
+    background-repeat: no-repeat;
+    /*align-items: baseline;*/
+    background-image: url("http://www.solofondos.com/wp-content/uploads/2016/01/fondos-pantalla-oscuros-4k.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    display: flex;
+    width: auto;
+    border: rgb(153, 158, 156) solid 3px;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    color: $color1;
+
+    /*propiedades de imagen pie de pagina */
+    .descripcionDos {
+        margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        
+    }
+}
