@@ -18,7 +18,8 @@ body {
         margin-top: 200px;
 
         .contenedor__card--modificador {
-            justify-content: center;
+
+            justify-items: center;
             background-image: url("https://fondosmil.com/fondo/10863.jpg");
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -99,24 +100,20 @@ body {
         }
 
         main {
-            width: auto;
             .contenedor__card--modificador {
                 display: flex;
                 background-color: orange;
-                .card{
-                    width: auto;
-                }
-                
-
-
-
-
-                
-                
+                flex-direction: column;
+                text-align: center;
+                align-content: center;  
+                align-items: center;
                 padding-top: 20px;
+                justify-content: space-evenly;
                 gap: 20px;
                 width: auto;
             }
+
+
 
 
         }

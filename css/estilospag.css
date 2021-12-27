@@ -220,7 +220,7 @@ body main {
 }
 
 body main .contenedor__card--modificador {
-  justify-content: center;
+  justify-items: center;
   background-image: url("https://fondosmil.com/fondo/10863.jpg");
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -271,17 +271,16 @@ body main .contenedor__card--modificador .card .card-body p {
     align-items: center;
     width: 100%;
   }
-  body main {
-    width: auto;
-  }
   body main .contenedor__card--modificador {
     display: flex;
     background-color: orange;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    align-items: center;
     padding-top: 20px;
+    justify-content: space-evenly;
     gap: 20px;
-    width: auto;
-  }
-  body main .contenedor__card--modificador .card {
     width: auto;
   }
 }
