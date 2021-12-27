@@ -137,30 +137,70 @@ header .navbar .collapse .dropdown-menu {
   background-color: #424240;
 }
 
-.footer__pie--modificador {
-  height: 16rem;
-  background-repeat: no-repeat;
-  /*align-items: baseline;*/
-  /*background-image: url("http://www.solofondos.com/wp-content/uploads/2016/01/fondos-pantalla-oscuros-4k.jpg");*/
-  background-color: black;
-  background-size: 100%;
-  background-position: bottom;
+footer .container__footer {
   display: flex;
-  width: auto;
-  border: #999e9c solid 3px;
-  margin-top: 400px;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  color: #eeff00;
-  /*propiedades de imagen pie de pagina */
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
 }
 
-.footer__pie--modificador .descripcionDos {
-  margin-top: 100px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+footer .container__footer .box__footer {
   display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+footer .container__footer .box__footer .logo img {
+  width: 180px;
+}
+
+footer .container__footer .box__footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 18px;
+}
+
+footer .container__footer .box__footer h2 {
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 700;
+}
+
+footer .container__footer .box__footer a {
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 600;
+}
+
+footer .container__footer .box__footer a :hover {
+  opacity: 0.8;
+}
+
+footer .container__footer .box__footer a .fab {
+  font-size: 20px;
+}
+
+footer .box__copyright {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+footer .box__copyright p {
+  margin-top: 80px;
+  color: #d41d1d;
+}
+
+footer .box__copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #3a3f3b;
 }
 
 body {
@@ -174,8 +214,8 @@ body {
 }
 
 body main {
-  padding: 3%;
-  background-color: black;
+  padding: 1%;
+  background-color: #a19f0c;
   margin-top: 200px;
 }
 
@@ -213,8 +253,36 @@ body main .contenedor__card--modificador .card .card-body p {
     background-color: orange;
     flex-direction: column;
     text-align: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: auto;
+  }
+}
+
+@media all and (max-width: 780px) {
+  body {
+    min-width: auto;
+  }
+  body header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  body main {
+    width: auto;
+  }
+  body main .contenedor__card--modificador {
+    display: flex;
+    background-color: orange;
     padding-top: 20px;
     gap: 20px;
+    width: auto;
+  }
+  body main .contenedor__card--modificador .card {
+    width: auto;
   }
 }
 /*# sourceMappingURL=estilospag.css.map */

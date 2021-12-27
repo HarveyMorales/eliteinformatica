@@ -137,30 +137,70 @@ header .navbar .collapse .dropdown-menu {
   background-color: #424240;
 }
 
-.footer__pie--modificador {
-  height: 16rem;
-  background-repeat: no-repeat;
-  /*align-items: baseline;*/
-  /*background-image: url("http://www.solofondos.com/wp-content/uploads/2016/01/fondos-pantalla-oscuros-4k.jpg");*/
-  background-color: black;
-  background-size: 100%;
-  background-position: bottom;
+footer .container__footer {
   display: flex;
-  width: auto;
-  border: #999e9c solid 3px;
-  margin-top: 400px;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  color: #eeff00;
-  /*propiedades de imagen pie de pagina */
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
 }
 
-.footer__pie--modificador .descripcionDos {
-  margin-top: 100px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+footer .container__footer .box__footer {
   display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+footer .container__footer .box__footer .logo img {
+  width: 180px;
+}
+
+footer .container__footer .box__footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 18px;
+}
+
+footer .container__footer .box__footer h2 {
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 700;
+}
+
+footer .container__footer .box__footer a {
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 600;
+}
+
+footer .container__footer .box__footer a :hover {
+  opacity: 0.8;
+}
+
+footer .container__footer .box__footer a .fab {
+  font-size: 20px;
+}
+
+footer .box__copyright {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+footer .box__copyright p {
+  margin-top: 80px;
+  color: #d41d1d;
+}
+
+footer .box__copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #3a3f3b;
 }
 
 body {
@@ -209,6 +249,7 @@ body main .secDos--modificador .boxNecesidades--modificador {
   /*border: 2px gray solid;*/
   justify-content: space-evenly;
   align-items: center;
+  gap: 30px;
 }
 
 body main .secDos--modificador .boxNecesidades--modificador .necesidadUno,
@@ -291,6 +332,7 @@ body main .secTres--modificador {
   width: 100%;
   height: 400px;
   display: flex;
+  border: grey 2px solid;
   margin-top: 13rem;
   flex-direction: column;
   align-items: center;
@@ -299,9 +341,9 @@ body main .secTres--modificador {
 
 body main .secTres--modificador .secTres__boxProvedores--modificador {
   display: flex;
-  width: 90%;
+  width: 100%;
   height: 350px;
-  border: 2px grey solid;
+  gap: 30px;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -312,7 +354,7 @@ body main .secTres--modificador .secTres__boxProvedores--modificador .provedorTr
   display: flex;
   width: 380px;
   height: 280px;
-  border: 2px solid gray;
+  border: solid grey 2px;
 }
 
 body main .secTres--modificador .secTres__boxProvedores--modificador .provedorUno {
@@ -362,20 +404,20 @@ body main .secTres--modificador .secTres__boxProvedores--modificador .provedorTr
 
 body main .secCuatro--modificador {
   width: 100%;
-  height: 300px;
+  height: 400px;
   display: flex;
-  /*  border: gray solid 2px;*/
+  border: gray solid 2px;
   margin-top: 13rem;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 body main .secCuatro--modificador .secCuatro__boxServicios--modificador {
   display: flex;
   width: 90%;
-  height: 280px;
-  border: 2px grey solid;
+  height: 350px;
+  gap: 30px;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -457,6 +499,7 @@ body main .secCuatro--modificador .secCuatro__boxServicios--modificador .servici
   body main .secTres--modificador {
     height: auto;
     flex-direction: column;
+    gap: px;
   }
   body main .secTres--modificador .secTres__boxProvedores--modificador {
     width: auto;
@@ -476,6 +519,7 @@ body main .secCuatro--modificador .secCuatro__boxServicios--modificador .servici
   body footer {
     width: auto;
     display: flex;
+    justify-content: space-between;
   }
   body footer .descripcionDos,
   body footer .descripcionUno,

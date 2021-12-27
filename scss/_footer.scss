@@ -1,28 +1,72 @@
 @import "variables";
 
-.footer__pie--modificador {
-    height: 16rem;
-    background-repeat: no-repeat;
-    /*align-items: baseline;*/
-    /*background-image: url("http://www.solofondos.com/wp-content/uploads/2016/01/fondos-pantalla-oscuros-4k.jpg");*/
-    background-color: black;
-    background-size: 100%;
-    background-position: bottom;
-    display: flex;
-    width: auto;
-    border: rgb(153, 158, 156) solid 3px;
-    margin-top: 400px;
-    justify-content: space-between;
-    align-items: center;
-    color: $color1;
+footer {
 
-    /*propiedades de imagen pie de pagina */
-    .descripcionDos {
-        margin-top: 100px;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+    .container__footer {
         display: flex;
-        
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 100px;
+
+        .box__footer {
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+
+            .logo img {
+                width: 180px;
+            }
+
+            .terms {
+                max-width: 350px;
+                margin-top: 20px;
+                font-weight: 500;
+                color: #7a7a7a;
+                font-size: 18px;
+            }
+
+            h2 {
+                margin-bottom: 30px;
+                color: #343434;
+                font-weight: 700;
+            }
+
+            a {
+                margin-top: 10px;
+                color: #7a7a7a;
+                font-weight: 600;
+
+                :hover {
+                    opacity: 0.8;
+                }
+
+                .fab {
+                    font-size: 20px;
+                }
+            }
+        }
+
+
+    }
+
+    .box__copyright {
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 0px 40px;
+
+        p {
+            margin-top: 80px;
+            color: #d41d1d;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #3a3f3b;
+        }
     }
 }

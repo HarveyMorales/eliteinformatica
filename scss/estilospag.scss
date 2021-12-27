@@ -13,8 +13,8 @@ body {
 
 
     main {
-        padding: 3%;
-        background-color: black;
+        padding: 1%;
+        background-color: rgb(161, 159, 12);
         margin-top: 200px;
 
         .contenedor__card--modificador {
@@ -27,6 +27,7 @@ body {
             padding: 20px;
             row-gap: 50px;
             justify-content: space-between;
+            
 
             .card {
 
@@ -73,8 +74,48 @@ body {
                 background-color: orange;
                 flex-direction: column;
                 text-align: center;
+                align-content: center;  
+                align-items: center;
+                padding-top: 20px;
+                justify-content: space-evenly;
+                gap: 20px;
+                width: auto;
+            }
+
+
+        }
+    }
+}
+
+@media all and (max-width: 780px) {
+
+    body {
+        min-width: auto;
+
+        header {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        main {
+            width: auto;
+            .contenedor__card--modificador {
+                display: flex;
+                background-color: orange;
+                .card{
+                    width: auto;
+                }
+                
+
+
+
+
+                
+                
                 padding-top: 20px;
                 gap: 20px;
+                width: auto;
             }
 
 
